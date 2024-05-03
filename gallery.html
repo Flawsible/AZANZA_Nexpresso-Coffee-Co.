@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Nexpresso Coffee Co.</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f1e6; /* Cream */
+            color: #422f1c; /* Dark brown */
+            margin: 0; /* Remove default body margin */
+            padding: 0; /* Remove default body padding */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #f1d4c8; /* Light brown */
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #5c4638; /* Coffee */
+            padding: 10px;
+            overflow: auto; /* Clearfix to contain floated elements */
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center; /* Center the navigation */
+        }
+
+        nav ul li {
+            display: inline; /* Display list items horizontally */
+            margin-right: 20px; /* Add spacing between links */
+        }
+
+        nav ul li a {
+            color: #f8f1e6; /* Cream */
+            text-decoration: none; /* Remove underlines from links */
+            transition: color 0.3s; /* Smooth transition */
+        }
+
+        nav ul li a:hover {
+            color: #f1e1d4; /* Light cream */
+            background-color: #8c6343; /* Dark brown */
+            border-radius: 5px; /* Add rounded corners */
+        }
+
+        .container section {
+            margin-bottom: 30px;
+        }
+
+        .container h2 {
+            color: #5a3a22; /* Dark brown */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-gap: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        .btn-container {
+            text-align: center;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #5c4638; /* Coffee */
+            color: #f8f1e6; /* Cream */
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #8c6343; /* Dark brown */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Nexpresso Coffee Co. Gallery</h1>
+        <p>Check out some snapshots from our coffee shop!</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <section>
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <!-- Images -->
+                <img src="1.jpg" alt="Image 1">
+                <img src="2.jpg" alt="Image 2">
+                <img src="3.jpg" alt="Image 3">
+                <img src="4.jpg" alt="Image 4">
+                <img src="5.jpg" alt="Image 5">
+                <img src="6.jpg" alt="Image 6">
+                <img src="7.jpg" alt="Image 7">
+                <img src="8.jpg" alt="Image 8">
+                <img src="9.jpg" alt="Image 9">
+                <img src="10.jpg" alt="Image 10">
+                <img src="11.jpg" alt="Image 11">
+                <img src="12.jpg" alt="Image 12">
+                <img src="13.jpg" alt="Image 13">
+                <img src="14.jpg" alt="Image 14">
+                <img src="15.jpg" alt="Image 15">
+            </div>
+        </section>
+
+        <!-- Button to Testimonials -->
+        <div class="btn-container">
+            <a href="testimonials.html" class="btn">View Testimonials</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Nexpresso Coffee Co. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

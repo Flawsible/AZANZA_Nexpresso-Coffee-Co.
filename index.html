@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexpresso Coffee Co.</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        /* CSS for color palette */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #422f1c; /* dark brown */
+            margin: 0; /* Remove default body margin */
+            padding: 0; /* Remove default body padding */
+        }
+
+        header {
+            background-color: #f1e1d4; /* light cream */
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #5a3a22; /* dark brown */
+            padding: 10px;
+            overflow: auto; /* Clearfix to contain floated elements */
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center; /* Center the navigation */
+        }
+
+        nav ul li {
+            display: inline; /* Display list items horizontally */
+            margin-right: 20px; /* Add spacing between links */
+        }
+
+        nav ul li a {
+            color: #ffffff; /* white */
+            text-decoration: none; /* Remove underlines from links */
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline; /* Add underline on hover */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .featured-image {
+            text-align: center;
+        }
+
+        .featured-image img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .product {
+            text-align: center;
+            margin: 20px 0;
+            width: 200px; /* Set width for each product */
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #5a3a22; /* dark brown */
+            color: #f1e1d4; /* cream */
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Nexpresso Coffee Co.</h1>
+        <p>Your one-stop destination for premium coffee, teas, and pastries!</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Featured Image -->
+        <div class="featured-image">
+            <img src="bg.jpg" alt="Featured Image"> <!-- Change src to bg.jpg -->
+        </div>
+
+        <!-- Product Showcase Section -->
+        <section>
+            <h2>Featured Products</h2>
+            <p>Check out our featured products below. From savory sandwiches to sweet pastries, we have something for everyone!</p>
+            <div class="product-container">
+                <!-- Product 3: Katsu Sandwich -->
+                <div class="product">
+                    <img src="katsusandwich.jpg" alt="Katsu Sandwich">
+                    <h3>Katsu Sandwich</h3>
+                    <p>Indulge in our delicious Katsu Sandwich made with crispy chicken katsu, fresh lettuce, and tangy sauce.</p>
+                </div>
+
+                <!-- Product 4: Strawberry Milk -->
+                <div class="product">
+                    <img src="strawberrymilk.jpg" alt="Strawberry Milk">
+                    <h3>Strawberry Milk</h3>
+                    <p>Quench your thirst with our refreshing Strawberry Milk, made with real strawberries and creamy milk.</p>
+                </div>
+
+                <!-- Product 5: Pork Floss Buns -->
+                <div class="product">
+                    <img src="flossbuns.jpg" alt="Pork Floss Buns">
+                    <h3>Pork Floss Buns</h3>
+                    <p>Try our savory Pork Floss Buns, filled with tender shredded pork and topped with crunchy sesame seeds.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Button to Products -->
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="products.html" style="text-decoration: none; background-color: #5a3a22; color: #f8f1e6; padding: 10px 20px; border-radius: 5px;">View All Products</a>
+        </div>
+
+        <!-- About Us Section -->
+        <section>
+            <h2>About Us</h2>
+            <p>Welcome to Nexpresso Coffee Co., your go-to place for the finest coffee, teas, and pastries. At Nexpresso, we are passionate about providing our customers with exceptional quality and taste in every product we offer. From carefully sourced coffee beans to handcrafted pastries, we strive for perfection in every detail. Learn more about our story and our commitment to excellence by clicking the button below.</p>
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="about.html" style="text-decoration: none; background-color: #5a3a22; color: #f8f1e6; padding: 10px 20px; border-radius: 5px;">Learn More</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Nexpresso Coffee Co. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

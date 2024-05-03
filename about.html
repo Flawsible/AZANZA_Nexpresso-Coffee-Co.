@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Nexpresso Coffee Co.</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f1e6; /* Cream */
+            color: #422f1c; /* Dark brown */
+            margin: 0; /* Remove default body margin */
+            padding: 0; /* Remove default body padding */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #f1d4c8; /* Light brown */
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #5c4638; /* Coffee */
+            padding: 10px;
+            overflow: auto; /* Clearfix to contain floated elements */
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center; /* Center the navigation */
+        }
+
+        nav ul li {
+            display: inline; /* Display list items horizontally */
+            margin-right: 20px; /* Add spacing between links */
+        }
+
+        nav ul li a {
+            color: #f8f1e6; /* Cream */
+            text-decoration: none; /* Remove underlines from links */
+            transition: color 0.3s; /* Smooth transition */
+        }
+
+        nav ul li a:hover {
+            color: #f1e1d4; /* Light cream */
+            background-color: #8c6343; /* Dark brown */
+            border-radius: 5px; /* Add rounded corners */
+        }
+
+        .container section {
+            margin-bottom: 30px;
+        }
+
+        .container h2 {
+            color: #5a3a22; /* Dark brown */
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .image-container img {
+            width: 45%;
+            max-width: 400px;
+            height: auto;
+        }
+
+        .map-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 400px;
+            border: none;
+        }
+
+        .footer {
+            background-color: #5a3a22; /* Dark brown */
+            color: #f1e1d4; /* Light cream */
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        .btn-container {
+            text-align: center;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #5c4638; /* Coffee */
+            color: #f8f1e6; /* Cream */
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #8c6343; /* Dark brown */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Nexpresso Coffee Co.</h1>
+        <p>Your one-stop destination for premium coffee, teas, and pastries!</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <section>
+            <h2>About Us</h2>
+            <p>Nexpresso Coffee Co. was established in 2021 with a passion for bringing the finest coffee to our customers. We started with a simple menu offering black coffee, but as our popularity grew, so did our menu. Today, we proudly serve a wide variety of coffee drinks, including iced coffee, lattes, and more.</p>
+            <p>Our mission is to provide our customers with an exceptional coffee experience, using only the highest quality ingredients and expertly crafted recipes. Whether you're a coffee connoisseur or just looking for your daily caffeine fix, Nexpresso Coffee Co. has something for everyone.</p>
+            <p>Visit us at Aguinaldo Street, Brgy. 3, 6106 Hinigaran, Philippines and experience the Nexpresso difference today!</p>
+        </section>
+
+        <!-- Image Showcase -->
+        <section>
+            <div class="image-container">
+                <img src="image1.jpg" alt="Image 1">
+                <img src="image2.jpg" alt="Image 2">
+            </div>
+        </section>
+
+        <!-- Address and Map -->
+        <section>
+            <p>Visit us at:</p>
+            <p>Aguinaldo Street, Brgy. 3, 6106 Hinigaran, Philippines</p>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.9088913462317!2d122.60511881441838!3d10.274052972428576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99808e9999999%3A0xc5461a1f10857a8e!2sAguinaldo%20St%2C%20Hinigaran%2C%20Negros%20Occidental!5e0!3m2!1sen!2sph!4v1644913799265!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="btn-container">
+                <a href="products.html" class="btn">View Our Products</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Nexpresso Coffee Co. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
